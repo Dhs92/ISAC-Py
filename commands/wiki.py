@@ -3,8 +3,8 @@ import typing
 import wikia
 
 
-
 class WikiCommands(commands.Cog):
+
     def __init__(self, bot):
         self._bot = bot
 
