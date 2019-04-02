@@ -25,9 +25,8 @@ class WikiCommands(commands.Cog):
                     page = wikia.page("thedivision", search[i])
                     url = page.url.replace(' ', '_')
                     await ctx.send(f"<{url}>")
-
             except ValueError:
-                await ctx.send("Value Error!")
+                await ctx.send("No results found")
         else:
             await ctx.send("Max of 5 results allowed.")
 
